@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #212121;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkbox .trace {
+  width: 90px;
+  height: 8px;
+  background-color: gold;
+  position: absolute;
+  border-radius: 4px;
+}
+
+.checkbox .trace:nth-child(1) {
+  top: 26px;
+}
+
+.checkbox .trace:nth-child(2) {
+  top: 46px;
+}
+
+.checkbox .trace:nth-child(3) {
+  top: 66px
+}
