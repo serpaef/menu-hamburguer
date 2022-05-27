@@ -20,6 +20,7 @@
   justify-content: center;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .checkbox .trace {
@@ -38,7 +39,6 @@
 
 .checkbox .trace:nth-child(2) {
   top: 46px;
-  transform: rotate(0);
 }
 
 .checkbox .trace:nth-child(3) {
@@ -53,6 +53,13 @@
 #toggle:checked + .checkbox .trace:nth-child(1) {
   transform: rotate(45deg);
   top: 47px;
+}
+
+#toggle:checked + .checkbox .trace:nth-child(2) {
+  transform: translateX(40px);
+  width: 0px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 #toggle:checked + .checkbox .trace:nth-child(3) {
